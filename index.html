@@ -7,48 +7,43 @@
     <link rel="stylesheet" href="estilo.css" />
 </head>
 <body>
-    <header> 
+    <header>
         <h1 tabindex="0">Yael Adair Gutiérrez Contreras</h1>
-        <h2 id="presentacion-title">Bienvenido a mi portafolio</h2>
-        <p> Hola, soy Yael Adair Gutiérrez Contreras, tengo 19 años y actualmente estoy 
-            cursando la carrera "Licenciatura en Ingeniería en Sistemas y Tecnologías 
-            de la Información", si quieres conocer más de mis habilidades, haz click en el botón de abajo:
-        </p>
+        <h2 id="presentacion-title" tabindex="0">Bienvenido a mi portafolio</h2>
+        <p tabindex="0">Hola, soy Yael Adair Gutiérrez Contreras, tengo 19 años y estudio "Licenciatura en Ingeniería en Sistemas y Tecnologías de la Información".</p>
         <img 
-            src="https://scontent-mty2-1.xx.fbcdn.net/v/t39.30808-6/385068548_1885232191896156_2080591316941672861_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEb4OFVHRCugnB88Tkk7XS13PPkbwKFRD_c8-RvAoVEP8A3JO1PJTMaMDEFK39pObB-2eldEnkf7OFDObhJ0CWD&_nc_ohc=90sZqb_aSvsQ7kNvwHaTZzj&_nc_oc=AdnLDGdhz6PP1hVbFF6OKG2GnOuc593Bu7Wz2tCEhisU3GSzeSgZkaI0UvVp0BNWNuo&_nc_zt=23&_nc_ht=scontent-mty2-1.xx&_nc_gid=04NIulsYv7Hci4VRFl2-8Q&oh=00_AfMn3MWQxqZPHgVlreDTtSxxlzNPDoCO15Qf71kQyYCHFg&oe=684CC428" 
+            src="Yael Perfil.jpg" 
             alt="Foto de Yael Adair Gutiérrez Contreras" 
             width="300"
-            style="border-radius: 10px; box-shadow: 4px 4px 10px rgba(0,0,0,0.3); margin-top: 1em;" >
+            tabindex="0"
+            style="border-radius: 10px; box-shadow: 4px 4px 10px rgba(0,0,0,0.3); margin-top: 1em;">
     </header>
     
-    <main>
-        <section aria-labelledby="botones-info">
+    <main id="mainContent" tabindex="-1" aria-label="Contenido principal">
+        <section aria-labelledby="botones-info" role="region" tabindex="0">
+            <h2 id="botones-info" tabindex="0">Información</h2>
+
             <button id="boton-info-personal" aria-expanded="false" aria-controls="info-personal">Información Personal</button>
-            <div id="info-personal" hidden></div>
-            <script src="script.js"></script>
-
-
-
-            </div>
-
-            <hr style="margin: 2em 0;">
+            <div id="info-personal" hidden aria-live="polite" tabindex="0"></div>
+            
+            <hr style="margin: 2em 0;" />
 
             <button id="boton-mas-info" aria-expanded="false" aria-controls="info-adicional">Más información</button>
-            <div id="info-adicional" hidden>
-                <p>Tengo experiencia en HTML, CSS, JavaScrip, Java, Python, SQL. Me gusta crear sitios con una buena interfaz y amigables.</p>
+            <div id="info-adicional" hidden tabindex="0">
+                <p tabindex="0">Tengo experiencia en HTML, CSS, JavaScript, Java, Python, SQL. Me gusta crear sitios con una buena interfaz y que sean amigables para el usuario.</p>
                 <ul>
-                    <li><a href="Proyectos.html">Proyectos</a></li>
-                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="Proyectos.html" tabindex="0">Proyectos</a></li>
+                    <li><a href="Contacto.html" tabindex="0">Contacto</a></li>
                 </ul>
             </div>
-            <script src="script1.js"></script>
         </section>
     </main>
 
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+
     <footer>
-        <p>© 2025 Yael Adair Gutiérrez Contreras. Todos los derechos reservados.</p>
+        <p tabindex="0">© 2025 Yael Adair Gutiérrez Contreras. Todos los derechos reservados.</p>
     </footer>
-
-
 </body>
 </html>
