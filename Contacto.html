@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contacto - Yael Adair</title>
+    <link rel="stylesheet" href="estilo.css"/>
+</head>
+<body>
+    <header>
+        <h1 tabindex="0">Contáctame</h1>
+        <h2 class="subtitulo">¿Tienes preguntas?</h2>
+        <nav aria-label="Navegación principal">
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Proyectos.html">Proyectos</a></li>
+                <li><a href="Contacto.html" aria-current="page">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="formulario-contacto">
+            <h2 id="formulario-contacto">Formulario de Contacto</h2>
+            <p>Llena el formulario para poder recibir mi contacto</p>
+            <form id="contacto-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo" />
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com" />
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="Contacto.js"></script>
+
+    <footer>
+        <p>© 2025 Yael Adair Gutiérrez Contreras. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
